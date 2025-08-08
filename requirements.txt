@@ -1,0 +1,20 @@
+# Core libraries
+pandas>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+scikit-learn>=1.2.0
+
+# Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Notebook environment (VS Code compatibility)
+jupyter
+ipykernel
+
+# Kaggle API
+kaggle
+
+# Optional: for pretty plots and progress bars
+seaborn
+tqdm
