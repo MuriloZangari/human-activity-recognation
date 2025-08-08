@@ -17,6 +17,8 @@ import torch
 import torch.nn as nn
 from tqdm import tqdm
 
+import model
+
 def train_one_epoch(model, dataloader, criterion, optimizer, device):
     model.train()
     running_loss = 0.0
@@ -69,7 +71,14 @@ def train_model(model, train_loader, val_loader, optimizer, criterion, device, e
 
     for epoch in range(epochs):
         print(f"\nEpoch {epoch+1}/{epochs}")
-        train_loss, train_acc = train_one_epoch(model, train_loader, optimizer, criterion, device)
+        train_loss, train_acc = train_one_epoch(
+            model=model,
+            dataloader=train_loader,
+            criterion=criterion,
+            optimizer=optimizer,
+            device=device
+        )
+
         val_loss, val_acc = validate(model, val_loader, criterion, device)
 
         history['train_loss'].append(train_loss)
