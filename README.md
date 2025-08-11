@@ -89,9 +89,9 @@ human-activity-recognition/
 ## 📌 Project Status
 
 ☑️ Initial setup  
-☐ Data exploration  
-☐ MLP implementation  
-☐ Evaluation and hyperparameter tuning  
+☑️ Data exploration  
+☑️ MLP implementation  
+☑️ Evaluation and hyperparameter tuning  
 ☐ CNN experimentation  
 ☐ Final documentation  
 
